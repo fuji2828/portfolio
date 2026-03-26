@@ -1,13 +1,38 @@
+'use client';
+
 export default function Navbar() {
+  const navLinks = [
+    { label: 'Projects', href: '/' },
+    { label: 'Photography', href: '/photography' },
+    { label: 'Profile', href: '/profile' },
+  ];
+
   return (
-    <nav className="flex justify-center items-center max-w-6xl mx-auto p-6">
+    <nav className="sticky top-0 z-50 border-b">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+        <div className="flex justify-between items-center flex-wrap gap-4">
+          
+          {/* Logo/Brand */}
+          <div className="flex items-left gap-2">
+            <a href="/" className="nav-brand text-lg sm:text-xl">
+              Jeremy Fung
+            </a>
+          </div>
 
-      <div className="flex gap-6 text-sm">
-        <a href="/home">Projects</a>
-        <a href="/photography">Photography</a>
-        <a href="/profile">Profile</a>
+          {/* Navigation - Center */}
+          <div className="flex gap-4 sm:gap-8 items-center">
+            {navLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="text-xs sm:text-sm"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
       </div>
-
     </nav>
   );
 }

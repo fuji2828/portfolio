@@ -1,6 +1,6 @@
 "use client";
 
-import ProjectCard from "../../components/ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
 
@@ -27,20 +27,20 @@ export default function Home() {
           Jeremy Fung
         </h1>
 
-        <p className="text-xl text-gray-600">
+        <p className="text-xl">
           Software Engineering Student at Concordia University. 
         </p>
 
         <div className="mt-6 flex gap-4">
-          <a href="https://github.com/fuji2828" className="bg-black text-white px-4 py-2 rounded-lg">
+          <a href="https://github.com/fuji2828" className="social-link-btn bg-green-forest text-beige px-4 py-2 rounded-lg flex items-center justify-center" style={{backgroundColor: '#2d6a4f', color: '#f5f1e8'}}>
             GitHub
           </a>
 
-          <a href="https://www.linkedin.com/in/fungjeremy10/" className="bg-black text-white px-4 py-2 rounded-lg">
+          <a href="https://www.linkedin.com/in/fungjeremy10/" className="social-link-btn bg-green-forest text-beige px-4 py-2 rounded-lg flex items-center justify-center" style={{backgroundColor: '#2d6a4f', color: '#f5f1e8'}}>
             LinkedIn
           </a>
 
-          <a href="/Jeremy_Fung_CV.pdf" className="border px-4 py-2 rounded-lg">
+          <a href="/Jeremy_Fung_CV.pdf" className="social-link-btn bg-green-forest text-beige px-4 py-2 rounded-lg flex items-center justify-center" style={{backgroundColor: '#2d6a4f', color: '#f5f1e8'}}>
             Resume
           </a>
         </div>

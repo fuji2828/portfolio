@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
+  --background: #0f2818;
+  --foreground: #f5f1e8;
 }
 
 @theme inline {
@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --foreground: #ffffff;
+    --background: #0f2818;
+    --foreground: #f5f1e8;
   }
 }
 
@@ -23,4 +23,63 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+html {
+  background: var(--background);
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #132a1f;
+  backdrop-filter: blur(10px);
+  border-bottom-color: rgba(245, 241, 232, 0.1);
+}
+
+nav a {
+  color: #d4c5b9;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #f5f1e8;
+}
+
+.nav-brand {
+  color: #f5f1e8;
+  font-weight: 700;
+}
+
+.nav-contact-btn {
+  background-color: #f5f1e8;
+  color: #1b4332;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-contact-btn:hover {
+  background-color: #d4c5b9;
+}
+
+/* Social Links Hover Animation */
+.social-link {
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  color: #f5f1e8;
+  text-shadow: 0 0 8px rgba(245, 241, 232, 0.2);
+}
+
+/* Social Link Buttons Hover Animation */
+.social-link-btn {
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.social-link-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
