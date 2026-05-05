@@ -41,7 +41,6 @@ html {
 }
 
 .navbar-glass:hover {
-  background: rgba(19, 42, 31, 0.75);
   border-color: rgba(245, 241, 232, 0.3);
   box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
 }

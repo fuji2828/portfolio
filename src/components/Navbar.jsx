@@ -8,7 +8,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="sticky top-4 left-1/2 transform -translate-x-1/2 z-50 navbar-glass rounded-3xl w-fit">
+    <nav className="sticky top-4 left-1/2 transform -translate-x-1/2 z-50 navbar-glass rounded-full w-fit">
       <div className="px-6 sm:px-8 py-4">
         <div className="flex justify-center items-center gap-6 sm:gap-10">
 
