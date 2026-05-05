@@ -1,31 +1,24 @@
 'use client';
 
 export default function Navbar() {
-  const navLinks = [
-    { label: 'Projects', href: '/' },
+  const navLinks = [ 
+    { label: 'Profile', href: '/' },
+    { label: 'Projects', href: '/projects' },
     { label: 'Photography', href: '/photography' },
-    { label: 'Profile', href: '/profile' },
   ];
 
   return (
-    <nav className="sticky top-0 z-50 border-b">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
-        <div className="flex justify-between items-center flex-wrap gap-4">
-          
-          {/* Logo/Brand */}
-          <div className="flex items-left gap-2">
-            <a href="/" className="nav-brand text-lg sm:text-xl">
-              Jeremy Fung
-            </a>
-          </div>
+    <nav className="sticky top-4 left-1/2 transform -translate-x-1/2 z-50 navbar-glass rounded-3xl w-fit">
+      <div className="px-6 sm:px-8 py-4">
+        <div className="flex justify-center items-center gap-6 sm:gap-10">
 
-          {/* Navigation - Center */}
-          <div className="flex gap-4 sm:gap-8 items-center">
+          {/* Navbar - Center */}
+          <div className="flex gap-6 sm:gap-10 items-center">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-xs sm:text-sm"
+                className="nav-link text-xs sm:text-sm font-medium"
               >
                 {link.label}
               </a>
