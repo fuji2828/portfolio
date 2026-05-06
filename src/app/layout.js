@@ -1,5 +1,5 @@
-import { Lexend } from "next/font/google";
 import "./globals.css";
+import { Lexend } from "next/font/google";
 import Navbar from "../components/Navbar";
 
 const lexend = Lexend({

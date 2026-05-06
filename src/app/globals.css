@@ -32,12 +32,15 @@ html {
 
 /* Navbar Styles */
 .navbar-glass {
-  background: rgba(45, 76, 61, 0.7);
+  background-color: rgba(15, 40, 24, 0.3);
   backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(245, 241, 232, 0.2);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   transition: all 0.3s ease;
+  will-change: backdrop-filter;
+  overflow: hidden;
+  isolation: isolate;
 }
 
 .navbar-glass:hover {
@@ -108,11 +111,18 @@ nav a {
 
 /* Social Link Buttons Hover Animation */
 .social-link-btn {
-  transition: all 0.2s ease;
+  background-color: rgba(15, 40, 24, 0.3);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(245, 241, 232, 0.2);
+  transition: all 0.3s ease;
   position: relative;
+  overflow: hidden;
+  isolation: isolate;
 }
 
 .social-link-btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-color: rgba(245, 241, 232, 0.461);
 }
