@@ -111,9 +111,6 @@ nav a {
 
 /* Social Link Buttons Hover Animation */
 .social-link-btn {
-  background-color: rgba(15, 40, 24, 0.3);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(245, 241, 232, 0.2);
   transition: all 0.3s ease;
   position: relative;

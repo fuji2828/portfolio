@@ -40,7 +40,6 @@ export default function Skills() {
       { name: 'JUnit', level: 'Intermediate', Icon: SiJunit5 },
       { name: 'MySQL', level: 'Basic', Icon: SiMysql },
       { name: 'MongoDB', Icon: SiMongodb },
-      { name: 'Kotlin', level: 'Basic', Icon: SiKotlin },
     ],
     languages: [
       { name: 'Java', level: 'Intermediate', Icon: FaJava },
@@ -48,6 +47,7 @@ export default function Skills() {
       { name: 'C', level: 'Basic', Icon: SiC },
       { name: 'TypeScript', level: 'Intermediate', Icon: SiTypescript },
       { name: 'JavaScript', level: 'Intermediate', Icon: SiJavascript },
+      { name: 'Kotlin', level: 'Basic', Icon: SiKotlin },
     ],
     other: [
       { name: 'Git', Icon: FaGit },
