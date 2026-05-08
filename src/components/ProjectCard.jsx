@@ -50,7 +50,7 @@ export default function ProjectCard({ title, description, tech, image, images, y
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
             onClick={(e) => e.stopPropagation()}
-            className="relative bg-white rounded-lg max-w-5xl w-full max-h-96 flex overflow-hidden"
+            className="relative bg-white rounded-lg max-w-5xl w-full max-h-screen flex overflow-hidden"
           >
             {/* Description */}
             <div className="w-1/2 p-6 flex flex-col justify-between overflow-y-auto">
