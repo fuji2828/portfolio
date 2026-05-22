@@ -76,7 +76,7 @@ export default function ProjectCard({ title, description, points, tech, image, i
             </div>
 
             {/* Images */}
-            <div className="w-1/2 relative bg-gray-100 flex items-center justify-center">
+            <div className="w-1/2 h-full relative bg-gray-100 flex items-center justify-center">
               <img
                 src={imageList[currentImageIndex]}
                 alt={`${title} ${currentImageIndex + 1}`}

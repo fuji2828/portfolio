@@ -39,8 +39,8 @@ export default function Projects() {
       title: "Bike Sharing Application",
       description: "Built a full-stack bike sharing web app supporting 50+ users with real-time reservations and rental management. Developed a tier-based incentive system rewarding consistent usage with discounts and benefits, improving reliability and reducing missed reservations. Built operator tools for inventory monitoring and bike rebalancing, with backend tracking to prevent reservation abuse.",
       tech: "Springboot • React • JavaScript • HTML/CSS • Apache Maven",
-      image: "/projects/bike.png",
-      images: ["/projects/bike.png", "/projects/bike2.png", "/projects/bike3.png"],
+      image: "/projects/bike.jpg",
+      images: ["/projects/bike.jpg", "/projects/bike2.jpg", "/projects/bike3.jpg","/projects/bike4.jpg"],
       year: 2025
     },
     {
@@ -54,10 +54,10 @@ export default function Projects() {
   ];
 
   return (
-    <main className="max-w-6xl mx-auto px-6 py-10">
+    <main className="max-w-6xl mx-auto px-6 py-24">
 
-      <section className="mb-20">
-        <h1 className="text-5xl font-bold mb-4">
+      <section className="mb-12">
+        <h1 className="text-5xl font-bold mb-8">
           Projects
         </h1>
 
