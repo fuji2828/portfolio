@@ -20,16 +20,34 @@
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
+  margin: 0;
 }
 
 html {
   background: var(--background);
 }
 
+.hero-skyline {
+  background-image: url('/skyline.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.herocard-glass{
+  background-color: rgba(15, 40, 24, 0.3);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border: 1px solid rgba(245, 241, 232, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  transition: all 0.3s ease;
+  will-change: backdrop-filter;
+  overflow: hidden;
+  isolation: isolate;
+}
 /* Navbar Styles */
 .navbar-glass {
   background-color: rgba(15, 40, 24, 0.3);

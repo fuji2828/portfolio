@@ -56,8 +56,8 @@ export default function Skills() {
   };
 
   return (
-    <section className="mb-20">
-      <h2 className="text-3xl font-semibold mb-6">
+    <section className="mb-20 max-w-6xl mx-auto px-6">
+      <h2 className="text-3xl font-semibold mb-6 ">
         Skills
       </h2>
 

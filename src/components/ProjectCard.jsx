@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-export default function ProjectCard({ title, description, tech, image, images, year }) {
+export default function ProjectCard({ title, description, points, tech, image, images, year }) {
   const [isOpen, setIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -57,9 +57,18 @@ export default function ProjectCard({ title, description, tech, image, images, y
               <div>
                 <h2 className="text-3xl font-bold mb-2 text-gray-900">{title}</h2>
                 {year && <p className="text-sm text-gray-500 mb-4">{year}</p>}
-                <p className="text-gray-700 text-sm leading-relaxed mb-6">
-                  {description}
-                </p>
+                {description && (
+                  <p className="text-gray-700 text-sm leading-relaxed mb-6">
+                    {description}
+                  </p>
+                )}
+                {points && (
+                  <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm mb-6">
+                    {points.map((point, i) => (
+                      <li key={i}>{point}</li>
+                    ))}
+                  </ul>
+                )}
                 <p className="text-xs text-gray-600 font-semibold">
                   {tech}
                 </p>

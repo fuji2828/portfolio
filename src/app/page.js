@@ -5,47 +5,54 @@ import PassionCard from "@/components/PassionCard";
 
 export default function Home() {
   return (
-    <main className="max-w-6xl mx-auto px-6 py-10">
+    <main className="pb-10">
 
-      <section className="mb-10 flex flex-col-reverse md:flex-row gap-6 md:gap-12 items-center">
-        <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Jeremy Fung
-          </h1>
+      <div className="hero-skyline w-full px-6 md:px-10 pb-16 md:pb-24 min-h-screen flex items-center">
+        <div className="max-w-6xl mx-auto w-full">
+          <section
+            id="hero"
+            className="flex w-full flex-col-reverse md:flex-row items-center md:justify-between herocard-glass rounded-2xl px-24 py-10"
+          >
+            <div className="flex-1 text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Jeremy Fung
+            </h1>
 
-          <p className="text-lg md:text-xl">
-            Software Engineering Student at Concordia University. 
-          </p>
+            <p className="text-lg md:text-xl">
+              Software Engineering Student at Concordia University. 
+            </p>
 
-          <div className="mt-6 flex flex-wrap gap-3 md:gap-4 justify-center md:justify-start">
-            <a href="https://github.com/fuji2828" className="social-link-btn bg-green-forest text-beige px-4 py-2 rounded-lg flex items-center justify-center" style={{backgroundColor: '#2d6a4f', color: '#f5f1e8'}}>
-              GitHub
-            </a>
+            <div className="mt-6 flex flex-wrap gap-3 md:gap-4 justify-center md:justify-start">
+              <a href="https://github.com/fuji2828" className="social-link-btn bg-green-forest text-beige px-4 py-2 rounded-lg flex items-center justify-center" style={{backgroundColor: '#2d6a4f', color: '#f5f1e8'}}>
+                GitHub
+              </a>
 
-            <a href="https://www.linkedin.com/in/fungjeremy10/" className="social-link-btn bg-green-forest text-beige px-4 py-2 rounded-lg flex items-center justify-center" style={{backgroundColor: '#2d6a4f', color: '#f5f1e8'}}>
-              LinkedIn
-            </a>
+              <a href="https://www.linkedin.com/in/fungjeremy10/" className="social-link-btn bg-green-forest text-beige px-4 py-2 rounded-lg flex items-center justify-center" style={{backgroundColor: '#2d6a4f', color: '#f5f1e8'}}>
+                LinkedIn
+              </a>
 
-            <a href="/Jeremy_Fung_CV.pdf" className="social-link-btn bg-green-forest text-beige px-4 py-2 rounded-lg flex items-center justify-center" style={{backgroundColor: '#2d6a4f', color: '#f5f1e8'}}>
-              Resume
-            </a>
+              <a href="/Jeremy_Fung_CV.pdf" className="social-link-btn bg-green-forest text-beige px-4 py-2 rounded-lg flex items-center justify-center" style={{backgroundColor: '#2d6a4f', color: '#f5f1e8'}}>
+                Resume
+              </a>
+            </div>
           </div>
-        </div>
 
-        {/* PROFILE PICTURE */}
-        <div className="flex-shrink-0 w-full md:w-auto flex justify-center md:justify-end">
-          <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64">
-            <img 
-              src="/profile.jpg" 
-              alt="Profile"
-              className="w-full h-full rounded-full object-cover border-4 border-gray-300"
-            />
+          {/* PROFILE PICTURE */}
+          <div className="flex-shrink-0 w-full md:w-auto flex justify-center md:justify-end">
+            <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64">
+              <img 
+                src="/profile.jpg" 
+                alt="Profile"
+                className="w-full h-full rounded-full object-cover border-4 border-gray-300"
+              />
+            </div>
           </div>
+          </section>
         </div>
-      </section>
+      </div>
 
       {/* ABOUT ME */}
-      <section className="mb-12">
+      <section id="about" className="mt-20 mb-12 max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-semibold mb-6">
           About Me
         </h2>
@@ -60,7 +67,7 @@ export default function Home() {
       <Skills />
 
       {/* PASSIONS */}
-      <section className="mb-12">
+      <section className="mb-12 max-w-6xl mx-auto px-6">
         <h2 className="text-3xl font-semibold mb-6">
           Passions
         </h2>
@@ -68,27 +75,27 @@ export default function Home() {
           <PassionCard 
             title="Photography" 
             image="/passions/photography.jpg"
-            description="From landscapes to portraits, I love exploring different perspectives and lighting techniques to tell compelling visual stories."
+            description="I picked up photography in high school on an old Samsung phone and it quickly became a passion. I love capturing moments and sharing my perspective with others. Currently I shoot on a Sony A6400 with the kit lens, but I'm always looking to expand my gear and skills."
           />
           <PassionCard 
             title="Ski/Snowboarding" 
             image="/passions/ski.jpg"
-            description="There's nothing like plowing through fresh powder. Whether skiing or snowboarding, I enjoy pushing my limits and experiencing the thrill of the mountain."
+            description="I started skiing at 10 years old and haven't stopped since. There's nothing like plowing through fresh powder, especially with how little we get on the east coast. Each year I always try to learn something new and push my limits on the mountain. I'm also getting into snowboarding and loving the new challenges it brings."
           />
           <PassionCard 
             title="Bouldering" 
             image="/passions/bouldering.jpg"
-            description="Bouldering challenges both my body and mind. I love solving problems on the wall, connecting with the climbing community, and working towards new goals with every session."
+            description="Bouldering is my go-to indoor activity for staying active and challenging myself. I love the problem-solving aspect of it and the community vibe at climbing gyms. It's a great way to build strength and mental focus while having fun. (Yes that is a V12)"
           />
           <PassionCard
             title="Travel"
             image="/passions/travel.jpg"
-            description="Exploring new places and experiencing different cultures fuels my sense of adventure. Every trip teaches me something new and creates unforgettable memories."
+            description="I love exploring new places and experiencing different cultures. Traveling allows me to step out of my comfort zone and gain new perspectives. Whether it's a weekend road trip or an international adventure, I'm always up for discovering something new. Plus there's always great photo opportunities!"
           />
           <PassionCard
             title="Gaming"
             image="/passions/gaming.jpg"
-            description="Gaming is both a passion and a way to unwind. I enjoy immersive story-driven games and competitive challenges that test my skills and strategic thinking."
+            description="Gaming has been a part of my life since I was a kid. From the Wii, to the PS3, to my phone and finally to my own custom-built PC, I've enjoyed competitive shooters, open-world RPGs, and strategy games. It's a great way to unwind and connect with friends, and I also appreciate the artistry and storytelling that goes into each game. Fun fact: I was a top 300 Canadian Clash Royale player at my peak!"
           />
 
           <div className="w-full max-w-md">
