@@ -41,24 +41,21 @@ html {
 .herocard-glass{
   background-color: rgba(15, 40, 24, 0.3);
   -webkit-backdrop-filter: blur(12px) saturate(160%);
+  backdrop-filter: blur(12px) saturate(160%);
   border: 1px solid rgba(245, 241, 232, 0.2);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   transition: all 0.3s ease;
-  will-change: backdrop-filter;
   overflow: hidden;
-  isolation: isolate;
 }
 /* Navbar Styles */
 .navbar-glass {
   background-color: rgba(15, 40, 24, 0.3);
-  backdrop-filter: blur(20px) saturate(180%);
   -webkit-backdrop-filter: blur(20px) saturate(180%);
+  backdrop-filter: blur(20px) saturate(180%);
   border: 1px solid rgba(245, 241, 232, 0.2);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  transition: all 0.3s ease;
-  will-change: backdrop-filter;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
-  isolation: isolate;
 }
 
 .navbar-glass:hover {
@@ -66,9 +63,18 @@ html {
   box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.45);
 }
 
+/* Where backdrop-filter is unavailable, a 30% panel over the skyline is unreadable.
+   Fall back to a mostly-opaque panel instead. */
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .herocard-glass,
+  .navbar-glass {
+    background-color: rgba(15, 40, 24, 0.85);
+  }
+}
+
 nav a {
   color: #d4c5b9;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 .nav-link {
@@ -76,23 +82,18 @@ nav a {
   color: #d4c5b9;
 }
 
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 1.5px;
-  background: #f5f1e8;
-  transition: width 0.3s ease;
-}
-
-.nav-link:hover::after {
-  width: 100%;
-}
-
-.nav-link:hover {
+.nav-link:hover,
+.nav-link-active {
   color: #f5f1e8;
+}
+
+/* Sliding oval indicator behind the hovered/active link */
+.nav-pill {
+  background-color: rgba(245, 241, 232, 0.24);
+  border: 1px solid rgba(245, 241, 232, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(245, 241, 232, 0.4),
+    0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 .nav-brand {

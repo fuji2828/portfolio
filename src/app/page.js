@@ -75,7 +75,7 @@ export default function Home() {
           <PassionCard 
             title="Photography" 
             image="/passions/photography.jpg"
-            description="I picked up photography in high school on an old Samsung phone and it quickly became a passion. I love capturing moments and sharing my perspective with others. Currently I shoot on a Sony A6400 with the kit lens, but I'm always looking to expand my gear and skills."
+            description="I picked up photography in high school on an old Samsung phone and it quickly became a passion. I love capturing moments and sharing my perspective with others. Currently I shoot on a Sony A6400 with the kit lens. I'm always looking to expand my skills and explore new techniques."
           />
           <PassionCard 
             title="Ski/Snowboarding" 
@@ -85,12 +85,12 @@ export default function Home() {
           <PassionCard 
             title="Bouldering" 
             image="/passions/bouldering.jpg"
-            description="Bouldering is my go-to indoor activity for staying active and challenging myself. I love the problem-solving aspect of it and the community vibe at climbing gyms. It's a great way to build strength and mental focus while having fun. (Yes that is a V12)"
+            description="Bouldering is my go-to indoor activity for staying active and challenging myself. I love the problem-solving aspect of it and the vibe at climbing gyms. It's a great way to build strength and mental focus while having fun. (That's definitely a real V12)"
           />
           <PassionCard
             title="Travel"
             image="/passions/travel.jpg"
-            description="I love exploring new places and experiencing different cultures. Traveling allows me to step out of my comfort zone and gain new perspectives. Whether it's a weekend road trip or an international adventure, I'm always up for discovering something new. Plus there's always great photo opportunities!"
+            description="I love exploring new cities, exploring different cultures and trying new foods. I love seeing how different places and people can be. Whether it's a weekend road trip or an international adventure, I'm always up for discovering something new. Plus there's always great photo opportunities."
           />
           <PassionCard
             title="Gaming"
